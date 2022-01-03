@@ -60,5 +60,9 @@ copyEl.addEventListener("click", () => {
   textarea.select();
   document.execCommand("copy");
   textarea.remove();
-  alert("password copied to clipboard");
+  Swal.fire(
+    'Boa!',
+    'agora você copiou sua senha segura!',
+    'success'
+  )
 });
